@@ -19,6 +19,7 @@ public class Main {
         } catch (InsufficientFundsException e) {
             e.printStackTrace();
         }
+        System.out.printf("test");
     }
 }
 
