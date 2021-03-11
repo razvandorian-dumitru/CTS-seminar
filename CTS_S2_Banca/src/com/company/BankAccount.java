@@ -1,7 +1,7 @@
 package com.company;
 
 public abstract class BankAccount extends Account {
-    private double balance;
+    protected double balance;
     protected String iban;
 
 
