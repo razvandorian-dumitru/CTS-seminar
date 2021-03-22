@@ -12,7 +12,7 @@ public class SavingsAccount extends BankAccount implements Profitable {
 
     @Override
     public void deposit(double amount) {
-        this.balance += amount;
+       this.balance += amount;
 
     }
 
