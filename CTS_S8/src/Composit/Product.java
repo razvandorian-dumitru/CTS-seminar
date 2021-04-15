@@ -33,9 +33,11 @@ public class Product extends CatalogComponent {
 
     @Override
     public String toString() {
-        return "Product{" +
+       /* return "Product{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
-                '}';
+                '}';*/
+
+        return "Name: " + this.name + " -> Price: " + this.price + "\n";
     }
 }

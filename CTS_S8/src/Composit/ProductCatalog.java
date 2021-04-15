@@ -20,7 +20,7 @@ public class ProductCatalog extends CatalogComponent {
     public void remove(CatalogComponent component) {
 
         for (int i = 0; i < this.products.size(); i++)
-            if (products.get(i).equals(component.getName()))
+            if (products.get(i).getName().equals(component.getName()))
                 this.products.remove(i);
 
     }
@@ -32,6 +32,19 @@ public class ProductCatalog extends CatalogComponent {
 
     @Override
     public double getPrice() {
-        return 0;
+        throw new UnsupportedOperationException("Cant get price!");
+    }
+
+    @Override
+    public String toString() {
+        /*return "ProductCatalog{" +
+                "products=" + products +
+                ", name='" + name + '\'' +
+                '}';*/
+        StringBuilder builder = new StringBuilder();
+        builder.append(this.name).append("\n");
+        for (CatalogComponent component : this.products)
+            builder.append(component.toString());
+        return builder.toString();
     }
 }

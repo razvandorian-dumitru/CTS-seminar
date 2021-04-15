@@ -1,4 +1,4 @@
-package facade;
+package Facade;
 
 public class OrderFacade {
     //daca le luam la paramaterii, e impotriva scopului, dar tot le punem?
